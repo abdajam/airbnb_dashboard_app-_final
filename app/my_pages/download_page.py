@@ -6,7 +6,7 @@ from utils.helpers import AIRBNB_COLORS
 def show(logo_base64):
     st.subheader("Danke für Deinen Besuch!")
     st.write("Wir hoffen, Dir hat die App gefallen. Nun kannst Du sie direkt über das GitHub-Repository herunterladen.") 
-    st.markdown("""[Hier klicken, um die App herunterzuladen](https://github.com/ajab1/airbnb_dashboard_app_final)""")
+    st.markdown("""[Hier klicken, um die App herunterzuladen](https://github.com/abdajam/airbnb_dashboard_app-_final.git)""")
     
     # AirBnB-Stil Feedback-System mit Sternen
     st.markdown(f"""
