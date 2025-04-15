@@ -42,7 +42,7 @@ app/
 🚀 Projekt ausführen
 ----------------------
 1. Repository klonen:
-   git clone https://github.com/DEIN_USERNAME/airbnb-dashboard.git
+   git clone https://github.com/abdajam/airbnb_dashboard_app-_final.git
 
 2. In Projektordner wechseln:
    cd airbnb-dashboard
