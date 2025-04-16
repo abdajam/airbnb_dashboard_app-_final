@@ -274,6 +274,39 @@ def show(logo_base64):
             ),
             yaxis=dict(tickfont=dict(color=AIRBNB_COLORS['light']))
         )
+
+        # Liniendiagramm für den durchschnittlichen Preis über die Zeit
+        if 'last_review' in filtered_data.columns:
+            filtered_data['last_review'] = pd.to_datetime(filtered_data['last_review'])
+            time_series_data = filtered_data.groupby(filtered_data['last_review'].dt.to_period('M')).agg({'price': 'mean'}).reset_index()
+            time_series_data['last_review'] = time_series_data['last_review'].dt.to_timestamp()
+
+            fig_line = px.line(
+            time_series_data,
+            x='last_review',
+            y='price',
+            title='Durchschnittlicher Preis über die Zeit',
+            labels={'last_review': 'Datum', 'price': 'Durchschnittlicher Preis (¤)'},
+            color_discrete_sequence=[AIRBNB_COLORS['primary']]
+            )
+            fig_line.update_layout(
+            plot_bgcolor='black',
+            paper_bgcolor='black',
+            font={'color': AIRBNB_COLORS['light']},
+            title_font_color=AIRBNB_COLORS['tertiary'],
+            title={
+                'text': "Durchschnittlicher Preis über die Zeit",
+                'y': 0.9,
+                'x': 0.5,
+                'xanchor': 'center',
+                'yanchor': 'top'
+            },
+            xaxis_title_font=dict(color=AIRBNB_COLORS['light']),
+            yaxis_title_font=dict(color=AIRBNB_COLORS['light']),
+            xaxis=dict(tickfont=dict(color=AIRBNB_COLORS['light'])),
+            yaxis=dict(tickfont=dict(color=AIRBNB_COLORS['light']))
+            )
+            st.plotly_chart(fig_line, use_container_width=True)
         fig_hist.update_traces(marker=dict(line=dict(color=AIRBNB_COLORS['dark'], width=1)))
     
         st.plotly_chart(fig_hist, use_container_width=True)

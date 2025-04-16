@@ -5,7 +5,7 @@ def show(logo_base64):
     st.write(""" 
     Diese Anwendung bietet einen umfassenden Überblick über AirBnB-Immobilien.
              
-    Hier findest du Daten zu verschiedenen Städten, aus denen du eine beliebige Stadt deiner Wahl darstellen kannst. Klicke einfach auf den angegebenen Link, um die entsprechenden CSV-Dateien herunterzuladen.
+    Hier findest Du Daten zu verschiedenen Städten, aus denen du eine beliebige Stadt deiner Wahl darstellen kannst. Klicke einfach auf den angegebenen Link, um die entsprechenden CSV-Dateien herunterzuladen.
              
     Es gibt zwei Varianten der Listingsdaten: eine detaillierte Version als `gz` ZIP-Datei und die zusammengefasste `listings.csv`, welche für unsere Zwecke besser geeignet ist. 
     Wähle also bitte nicht die `listings.csv.gz`, sondern die `listings.csv` Datei.          
