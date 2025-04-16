@@ -1,4 +1,5 @@
 # VS Code Konfiguration ignorieren
 .vscode/
+my_pages/__pycache__/
 __pycache__/
 *.py[cod]
