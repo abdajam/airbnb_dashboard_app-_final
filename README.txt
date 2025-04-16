@@ -2,7 +2,7 @@ AirBnB Insights & Preisvorhersage Dashboard
 ===========================================
 
 Dieses Projekt ist ein interaktives Streamlit-Dashboard zur Analyse und Preisprognose von AirBnB-Angeboten
-auf Basis öffentlich verfügbarer Daten von http://insideairbnb.com.
+auf Basis öffentlich verfügbarer Daten von https://insideairbnb.com/get-the-data/
 
 🔍 Hauptfunktionen
 --------------------
