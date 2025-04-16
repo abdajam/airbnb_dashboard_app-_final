@@ -1,2 +1,4 @@
+# VS Code Konfiguration ignorieren
+.vscode/
 __pycache__/
 *.py[cod]
