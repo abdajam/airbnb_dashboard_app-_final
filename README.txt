@@ -27,13 +27,13 @@ app/
 ├── controller.py          # AppController-Klasse
 ├── pages/
 │   ├── home_page.py
+│   ├── structure_page.py
 │   ├── info_page.py
 │   ├── upload_page.py
 │   ├── analysis_page.py
-│   ├── download_page.py
-│   ├── structure_page.py
 │   ├── price_prediction_page.py
-│   └── fazit_page.py
+│   ├── fazit_page.py
+│   └── download_page.py
 └── utils/
     ├── helpers.py
     ├── style.py
@@ -42,7 +42,7 @@ app/
 🚀 Projekt ausführen
 ----------------------
 1. Repository klonen:
-   git clone https://github.com/abdajam/airbnb_dashboard_app-_final
+   git clone https://github.com/abdajam/airbnb_dashboard_app-_final.git
 
 2. In Projektordner wechseln:
    cd airbnb-dashboard
